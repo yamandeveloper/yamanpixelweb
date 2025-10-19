@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Tailwind 4 için referans bildirimi */
+@reference tailwindcss;
+
+/* Tailwind’in base ve utilities yapılarını dahil et */
+@layer base {
+  body {
+    @apply bg-neutral-950 text-neutral-100 font-sans;
+  }
+}
+
+@media (hover: none) {
+  .group:hover .group-hover\:scale-105 { transform: none !important; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
