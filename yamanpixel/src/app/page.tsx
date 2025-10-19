@@ -420,5 +420,10 @@ export default function YamanPixelHome() {
         ▲
       </button>
     </main>
+
+    
   );
+  
 }
+
+
